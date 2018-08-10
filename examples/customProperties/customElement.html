@@ -10,14 +10,14 @@
             color: var(--primaryColor);
         }
     </style>
-    <h3>Custom element with a shadow DOM opened</h3>
+    <h3>Custom element with a shadow DOM opened using custom properties</h3>
 </template>
 
 <script>
     var doc = (document._currentScript || document.currentScript).ownerDocument;
     var template = doc.querySelector('#template');
 
-    class ShadowDOMOpened extends HTMLElement {
+    class CustomElement extends HTMLElement {
         constructor() {
             super();
 
@@ -26,5 +26,5 @@
         }
     }
 
-    customElements.define('open-shadow', ShadowDOMOpened);
+    customElements.define('custom-element', CustomElement);
 </script>
