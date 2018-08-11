@@ -1,22 +1,23 @@
 <template id="template">
     <link rel="stylesheet" href="styles.css">
     <style>
-            :host {
-                --primaryColor: blue;
-            }
 
-            h3 {
-                color: var(--primaryColor);
-            }
+        :host {
+            --primaryColor: blue;
+        }
+
+        h3 {
+            color: var(--primaryColor);
+        }
     </style>
-    <h3>Custom element with a shadow DOM opened using custom properties</h3>
+    <h3>Another element with a shadow DOM opened using link tags</h3>
 </template>
 
 <script>
     var doc = (document._currentScript || document.currentScript).ownerDocument;
     var template = doc.querySelector('#template');
 
-    class CustomElement extends HTMLElement {
+    class AnotherElement extends HTMLElement {
         constructor() {
             super();
 
@@ -25,5 +26,5 @@
         }
     }
 
-    customElements.define('custom-element', CustomElement);
+    customElements.define('another-element', AnotherElement);
 </script>
