@@ -1,0 +1,25 @@
+<template id="template">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        h3 {
+            color: red;
+        }
+    </style>
+    <h3>Custom element with a shadow DOM opened using link tags</h3>
+</template>
+
+<script>
+    var doc = (document._currentScript || document.currentScript).ownerDocument;
+    var template = doc.querySelector('#template');
+
+    class CustomElement extends HTMLElement {
+        constructor() {
+            super();
+
+            const root = this.attachShadow({mode: "open"});
+            root.appendChild(template.content);
+        }
+    }
+
+    customElements.define('custom-element', CustomElement);
+</script>
