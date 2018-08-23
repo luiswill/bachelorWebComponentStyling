@@ -9,6 +9,10 @@ styleElement.innerHTML =
             :host {
                 --headline-color: rebeccapurple;
             }
+            
+            h3 {
+                font-size: 18px;
+            }
         </style>
     </template>
 `;
