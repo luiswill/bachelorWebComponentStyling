@@ -1,12 +1,17 @@
 <template id="template">
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <style>
-        @import "styles.css";
+        h3 {
+            --color-headline: var(--headline-color, pink);
+        }
 
         h3 {
-            color: blue;
+            
+            color: var(--color-headline, gold);
         }
     </style>
-    <h3>Custom element with a shadow DOM opened</h3>
+
+    <h3>Custom element with a shadow DOM importing shared styles with custom properties.</h3>
 </template>
 
 <script>
