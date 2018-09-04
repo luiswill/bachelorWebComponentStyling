@@ -17,7 +17,9 @@ class CustomElement extends PolymerElement {
           display: block;
         }
 
-        
+        h3 {
+          color: var(--headline-color, green);
+        }
       </style>
       <h3>I am a headline from Polymer.</h3>
     `;

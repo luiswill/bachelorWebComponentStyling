@@ -12,6 +12,7 @@ styleElement.innerHTML =
             
             h3 {
                 font-size: 18px;
+                --headline-color: rebeccapurple;
             }
         </style>
     </template>

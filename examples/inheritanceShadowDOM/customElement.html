@@ -1,8 +1,7 @@
 <template id="template">
     <style>
-            
     </style>
-    <h2>Custom element with a shadow DOM opened using custom properties.</h2>
+    <h2>This headline will be colored red even with a closed shadow DOM. <br/>That is because of the inheritance. </h2>
 </template>
 
 <script>
@@ -13,7 +12,7 @@
         constructor() {
             super();
 
-            const root = this.attachShadow({mode: "open"});
+            const root = this.attachShadow({mode: "closed"});
             root.appendChild(template.content);
         }
     }
