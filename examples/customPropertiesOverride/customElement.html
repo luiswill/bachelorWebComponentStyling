@@ -1,0 +1,40 @@
+<template id="template">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        :host
+        {
+            --primary-color: green;
+            --link-color: orange;
+        }
+
+        h3 {
+            color: var(--primary-color, rgb(255, 0, 0));
+        }
+
+        a {
+            color: var(--link-color, grey);
+        }
+    </style>
+    <h3>Headline oustide of <i>.content</i> div.</h3>
+    <div class="content">
+        <h3>
+            Some random text with a link inside pointing to <a href="">nothing</a>.
+        </h3>
+    </div>
+</template>
+
+<script>
+    var doc = (document._currentScript || document.currentScript).ownerDocument;
+    var template = doc.querySelector('#template');
+
+    class CustomElement extends HTMLElement {
+        constructor() {
+            super();
+
+            const root = this.attachShadow({mode: "open"});
+            root.appendChild(template.content);
+        }
+    }
+
+    customElements.define('custom-element', CustomElement);
+</script>
