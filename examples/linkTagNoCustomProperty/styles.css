@@ -1,3 +1,4 @@
-h3 {
-    color: pink;
+h3, another-element {
+    --color-headline: green;
+    color: green;
 }

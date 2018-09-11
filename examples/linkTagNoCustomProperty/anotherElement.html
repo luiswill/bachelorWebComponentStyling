@@ -1,16 +1,15 @@
 <template id="template">
     <link rel="stylesheet" href="styles.css">
     <style>
-
         :host {
-            --primaryColor: blue;
+            --color-headline: red;
         }
 
         h3 {
-            color: var(--primaryColor);
+            color: var(--color-headline);
         }
     </style>
-    <h3>Another element with a shadow DOM opened using link tags</h3>
+    <h3>Green headline. Uses custom properties and shared styles are applied.</h3>
 </template>
 
 <script>
