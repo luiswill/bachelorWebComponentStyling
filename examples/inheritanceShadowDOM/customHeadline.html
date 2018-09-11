@@ -8,7 +8,7 @@
     var doc = (document._currentScript || document.currentScript).ownerDocument;
     var template = doc.querySelector('#template');
 
-    class CustomElement extends HTMLElement {
+    class CustomHeadline extends HTMLElement {
         constructor() {
             super();
 
@@ -17,5 +17,5 @@
         }
     }
 
-    customElements.define('custom-element', CustomElement);
+    customElements.define('custom-headline', CustomHeadline);
 </script>
