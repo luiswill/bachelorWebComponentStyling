@@ -6,12 +6,7 @@ styleElement.innerHTML =
         <style>
             /* Shared styles */
             :host {
-                --headline-color: rebeccapurple;
-            }
-            
-            h3 {
-                font-size: 18px;
-                --headline-color: rebeccapurple;
+                --headline-color: green;
             }
         </style>
     </template>

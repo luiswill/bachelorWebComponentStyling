@@ -1,11 +1,12 @@
 import { PolymerElement, html } from '@polymer/polymer/polymer-element.js';
+import '../styles/shared-styles.js';
 
 class HeadlineElement extends PolymerElement {
     static get template() {
         return html`
-            <style>
-                :host h3 {
-                    color: red;
+            <style include="shared-styles">
+                h3 {
+                    color: var(--headline-color, red);
                 }
             </style>
 
