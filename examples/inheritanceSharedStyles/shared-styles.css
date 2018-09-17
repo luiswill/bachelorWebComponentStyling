@@ -1,7 +1,3 @@
-h3 {
-    color: purple;
-}
-
 .sharedStyles {
-   color: green;
+   color: green !important;
 }   

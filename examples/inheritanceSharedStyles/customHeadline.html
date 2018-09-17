@@ -1,7 +1,12 @@
 <template id="template">
     <style>
+        h3 {
+            color: red;
+        }
     </style>
-    <h3>This headline will be colored green even with a closed shadow DOM. <br/>That is because of the inheritance. </h3>
+    <h3>This headline will not get green, <br/>
+        But will stay red, because component's styles override <br/>
+        parent's styles.</h3>
 </template>
 
 <script>
