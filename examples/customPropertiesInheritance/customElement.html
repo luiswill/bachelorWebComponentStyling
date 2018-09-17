@@ -1,25 +1,14 @@
 <template id="template">
-    <link rel="stylesheet" href="styles.css">
     <style>
-        .content {
-            --primary-color: green;
-            --link-color: orange;
-        }
-
         h3 {
-            color: var(--primary-color, rgb(255, 0, 0));
+            color: green;
         }
-
         a {
             color: var(--link-color);
         }
     </style>
-    <h3>Headline oustide of <i>.content</i> div.</h3>
-    <div class="content">
-        <h3>
-            Some random text with a link inside pointing to <a href="">nothing</a>.
-        </h3>
-    </div>
+
+    <h3>This headline will be colored green, <br/>because component's styles override document styles.</h3>
 </template>
 
 <script>
