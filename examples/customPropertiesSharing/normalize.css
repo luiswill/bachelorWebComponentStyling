@@ -1,3 +1,7 @@
-a {
-    color: green;
+/* Default styles for every component */
+* {
+    --link-color: green;
+    --link-size: 18px;
+    --border-color: orange;
+    --border-size: 3px;
 }
