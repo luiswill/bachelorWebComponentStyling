@@ -1,16 +1,14 @@
 <template id="template">
     <style>
         h3 {
-            color: var(--headline-color, red);
+            color: green;
         }
-        h2 {
-            color: red;
+        a {
+            color: var(--link-color);
         }
     </style>
 
-    <h3>This headline in a custom element will be colored green, <br/>because shared styles override component's styles.</h3>
-    <h2>This headline in a custom element will be colored red, <br/>because of component's styles.</h2>
-    <a href="#">This link does not get the green from normalize.css</a>
+    <h3>This headline will be colored green, <br/>because component's styles override document styles.</h3>
 </template>
 
 <script>
